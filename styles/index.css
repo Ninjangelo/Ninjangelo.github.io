@@ -2,12 +2,25 @@
     background-color: #ffb280;
 }
 
-html {
+/*html {
 
-}
+}*/
 
 body {
     background-color: #303030;
     scroll-behavior: smooth;
     color: white;
+}
+
+#navbar {
+    background-color: #E65B00;
+    border-radius: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#navbar_icon_wrapper {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-left: 10%;
 }
