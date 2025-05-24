@@ -1,5 +1,5 @@
 :root {
-    background-color: #ffb280;
+    background-color: #FFFFFF;
 }
 
 /*html {
@@ -7,9 +7,13 @@
 }*/
 
 body {
-    background-color: #303030;
+    background-color: #FFFFFF;
     scroll-behavior: smooth;
     color: white;
+}
+
+#intro {
+    background-color: #303030;
 }
 
 #navbar {
@@ -23,4 +27,9 @@ body {
     margin-left: 32px;
     margin-right: 32px;
     padding-left: 10%;
+}
+
+#about_me {
+    background-color: #E65B00;
+    margin-top: 1%;
 }
