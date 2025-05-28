@@ -6,6 +6,21 @@
 
 }*/
 
+#fade_in {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     background-color: #FFFFFF;
     scroll-behavior: smooth;
@@ -13,7 +28,8 @@ body {
 }
 
 #intro {
-    background-color: #303030;
+    background-color: #FF934D;
+    padding-top: 15px;
 }
 
 #navbar {
@@ -28,6 +44,27 @@ body {
     margin-right: 32px;
     padding-left: 10%;
 }
+
+#profile_name {
+    padding-top: 125px;
+    border-bottom: solid #FFFFFF;
+    padding-left: 15px;
+}
+
+
+#first_name{
+    margin: 0%;
+    font-size: 45px;
+}
+
+#surname {
+    font-size: 75px;
+}
+
+#name_and_course {
+    margin-bottom: 100%;
+}
+
 
 #about_me {
     background-color: #E65B00;
