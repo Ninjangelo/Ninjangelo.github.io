@@ -1,0 +1,89 @@
+/*:root {
+    background-color: #FFFFFF;
+}*/
+
+/*html {
+
+}*/
+
+/*
+.fade_in {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*/
+
+/*
+body {
+    background-color: #FFFFFF;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+#intro {
+    background-color: #FF934D;
+    padding-top: 15px;
+}
+
+.navbar {
+    background-color: #E65B00;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar_icon_wrapper {
+    display: inline-block;
+    align-items: center;
+}
+
+#profile_name {
+    border-bottom: solid #FFFFFF;
+}
+
+
+
+#first_name{
+    margin: 0%;
+    font-size: 45px;
+}
+
+#surname {
+    font-size: 75px;
+}
+
+#name_and_course {
+    padding-top: 100px;
+}
+
+#course {
+    background-color: #E65B00;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 40%;
+    border-radius: 50px;
+}
+
+
+#about_me {
+    background-color: #E65B00;
+    margin-top: 1%;
+}
+*/
