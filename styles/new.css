@@ -1,5 +1,5 @@
 /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
-@import url(https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@700&family=Righteous&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1:wght@700&family=Righteous&display=swap);
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -8,17 +8,20 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
+    --tracking-widest: 0.1em;
+    --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -26,6 +29,7 @@
     --color-rust: #b34700;
     --font-righteous: "Righteous", sans-serif;
     --font-m_plus_1: "M PLUS 1", sans-serif;
+    --font-bebas_neue: "Bebas Neue", sans-serif;
   }
 }
 @layer base {
@@ -180,23 +184,17 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
+  .-mr-3 {
+    margin-right: calc(var(--spacing) * -3);
   }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
-  .mt-9 {
-    margin-top: calc(var(--spacing) * 9);
-  }
-  .-mr-40 {
-    margin-right: calc(var(--spacing) * -40);
-  }
-  .mr-20 {
-    margin-right: calc(var(--spacing) * 20);
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -209,9 +207,6 @@
   }
   .flex {
     display: flex;
-  }
-  .grid {
-    display: grid;
   }
   .hidden {
     display: none;
@@ -231,23 +226,14 @@
   .resize {
     resize: both;
   }
-  .columns-2 {
-    columns: 2;
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-  .grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
   .flex-row {
     flex-direction: row;
+  }
+  .place-content-center {
+    place-content: center;
   }
   .place-items-center {
     place-items: center;
@@ -258,23 +244,25 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-end {
-    justify-content: flex-end;
-  }
   .justify-items-center {
     justify-items: center;
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
   .gap-x-13 {
     column-gap: calc(var(--spacing) * 13);
+  }
+  .divide-x-2 {
+    :where(& > :not(:last-child)) {
+      --tw-divide-x-reverse: 0;
+      border-inline-style: var(--tw-border-style);
+      border-inline-start-width: calc(2px * var(--tw-divide-x-reverse));
+      border-inline-end-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+    }
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
@@ -292,16 +280,17 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-4 {
+  .border-10 {
     border-style: var(--tw-border-style);
-    border-width: 4px;
+    border-width: 10px;
   }
   .border-b-5 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 5px;
   }
-  .border-black {
-    border-color: var(--color-black);
+  .border-double {
+    --tw-border-style: double;
+    border-style: double;
   }
   .bg-rust {
     background-color: var(--color-rust);
@@ -312,8 +301,8 @@
   .object-cover {
     object-fit: cover;
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -321,20 +310,26 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .pt-7 {
-    padding-top: calc(var(--spacing) * 7);
+  .pt-9 {
+    padding-top: calc(var(--spacing) * 9);
   }
-  .pr-7 {
-    padding-right: calc(var(--spacing) * 7);
+  .pr-9 {
+    padding-right: calc(var(--spacing) * 9);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
-  .pb-7 {
-    padding-bottom: calc(var(--spacing) * 7);
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
   }
   .text-center {
     text-align: center;
+  }
+  .font-bebas_neue {
+    font-family: var(--font-bebas_neue);
   }
   .font-m_plus_1 {
     font-family: var(--font-m_plus_1);
@@ -346,14 +341,6 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
@@ -362,14 +349,38 @@
     font-size: var(--text-7xl);
     line-height: calc(var(--spacing) * 20);
   }
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  }
+  .text-9xl\/30 {
+    font-size: var(--text-9xl);
+    line-height: calc(var(--spacing) * 30);
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-\[17px\] {
     font-size: 17px;
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .text-rust {
+    color: var(--color-rust);
   }
   .text-white {
     color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .shadow-xl\/30 {
+    --tw-shadow-alpha: 30%;
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xl\/45 {
     --tw-shadow-alpha: 45%;
@@ -388,14 +399,30 @@
     --tw-text-shadow-alpha: 20%;
     text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%));
   }
+  .text-shadow-lg\/40 {
+    --tw-text-shadow-alpha: 40%;
+    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%));
+  }
+  .text-shadow-\[0_2px_0_\#000\,0_-2px_0_\#000\,2px_0_0_\#000\,-2px_0_0_\#000\] {
+    text-shadow: 0 2px 0 var(--tw-text-shadow-color, #000), 0 -2px 0 var(--tw-text-shadow-color, #000), 2px 0 0 var(--tw-text-shadow-color, #000), -2px 0 0 var(--tw-text-shadow-color, #000);
+  }
   .text-shadow-lg {
     text-shadow: 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
   }
+}
+@property --tw-divide-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -479,7 +506,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-divide-x-reverse: 0;
       --tw-border-style: solid;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;

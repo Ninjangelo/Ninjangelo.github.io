@@ -1,5 +1,5 @@
 /* FONTS */
-@import url(https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@700&family=Righteous&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1:wght@700&family=Righteous&display=swap);
 @import "tailwindcss";
 
 
@@ -11,4 +11,5 @@
 
     --font-righteous: "Righteous", sans-serif;
     --font-m_plus_1: "M PLUS 1", sans-serif;
+    --font-bebas_neue: "Bebas Neue", sans-serif;
 }
