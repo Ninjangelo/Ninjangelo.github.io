@@ -1,105 +1,155 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <!-- Character Encoding -->
-    <meta charset="utf-8">
-    <!-- Viewport Settings -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Website Tab Title -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Character Encoding -->
+  <meta charset="utf-8">
+  <!-- Viewport Settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Website Tab Title -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="styles/new.css" />
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles/new.css" />
 </head>
 
 <body>
   <!-- <div id="loader" class="loader"></div> -->
   <!-- Navbar + Hero -->
   <!-- <div id="content" class="hidden"> -->
-    <section class="bg-warm_orange h-screen">
-      <!-- Navbar -->
-      <div class="flex justify-between p-4 mx-4 font-righteous">
-        <nav class="p-4 bg-rust rounded-3xl text-white">
-          <ul class="flex flex-row place-items-center text-center divide-x-2">
-            <li class="text-3xl font-bebas_neue">
-              <a class="mx-4" href="#">Angelo</a>
-            </li>
-            <li>
-              <a class="text-lg mx-4" href="#">About Me</a>
-            </li>
-            <li>
-              <a class="text-lg mx-4" href="#">Education</a>
-            </li>
-            <li>
-              <a class="text-lg mx-4" href="#">Projects</a>
-            </li>
-            <li>
-              <a class="text-lg mx-4" class="mr-3" href="#">Skills</a>
-            </li>
-            <li>
-              <a class="text-lg mx-4" href="#">Experience</a>
-            </li>
-            <li>
-              <a class="text-lg mx-4" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="flex p-4 ml-98 bg-rust rounded-3xl place-items-center justify-items-center text-center text-white">
-          <a class="bg-rust p-1 rounded-full" href="#">
-            <img src="resources/icons/icons8-dark-mode-24.png">
-          </a>
-        </nav>
+  
+  <!-- NAVBAR -->
+  <div class="fixed top-0 w-full z-50">
+    <div class="flex flex-row justify-center p-4 font-righteous items-center">
+      <nav class="flex p-4 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
+        <a class="text-3xl font-bebas_neue" href="#hero">Angelo</a>
+      </nav>
+      <nav class="py-5 bg-black rounded-2xl text-white mx-68">
+        <ul class="flex flex-row divide-x-2">
+          <li>
+            <a class="text-lg mx-5" href="#about_me">About Me</a>
+          </li>
+          <li>
+            <a class="text-lg mx-5" href="#education">Education</a>
+          </li>
+          <li>
+            <a class="text-lg mx-5" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="text-lg mx-5" class="mr-3" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="text-lg mx-5" href="#experience">Experience</a>
+          </li>
+          <li>
+            <a class="text-lg mx-5" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="flex p-5 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
+        <a href="#" title="still being worked on... :'D">
+          <img src="resources/icons/night-mode.png">
+        </a>
+      </nav>
+    </div>
+  </div>
+  <!-- HERO -->
+  <section class="bg-warm_orange h-screen pt-25" id="hero">
+    <div class="flex flex-row mt-5 gap-x-13 items-center">
+      <div>
+        <div class="bg-rust py-9 pr-9 rounded-tr-4xl rounded-br-4xl shadow-xl/45">
+          <img class="h-120 object-cover rounded-tr-4xl rounded-br-4xl" src="/resources/images/headshot_angelo.JPG" alt="angelo__headshot"/>
+        </div>
       </div>
-      <!-- Hero -->
-      <div class="flex flex-row mt-5 gap-x-13 items-center">
-        <div>
-          <div class="bg-rust pt-9 pb-9 pr-9 rounded-tr-4xl rounded-br-4xl shadow-xl/45">
-            <img class="h-120 object-cover rounded-tr-4xl rounded-br-4xl" src="/resources/images/headshot_background(copy).JPG" alt="angelo__headshot"/>
+      <div class="text-white">
+        <div class="flex flex-col -mr-3 pb-4 border-b-5">
+          <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3 select-none">
+            <h1 class="text-7xl">Angelo Luis</h1>
+            <h2 class="text-9xl/30">Lagdameo</h2>
           </div>
         </div>
-        <div class="text-white">
-          <div class="flex flex-col -mr-3 pb-4 border-b-5">
-            <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3">
-              <h1 class="text-7xl">Angelo Luis</h1>
-              <h2 class="text-9xl/30">Lagdameo</h2>
+        <div class="flex flex-row ml-1 mt-4 gap-3 text-[17px] font-righteous select-none">
+          <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">2nd Year BSc Computer Science Student</h1>
+          <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Full-Stack</h1>
+          <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Software Engineering</h1>
+        </div>
+        <div class="flex flex-row ml-1 mt-6 gap-3 text-[17px] font-righteous place-content-center">
+          <a href="https://www.linkedin.com/in/angelo-luis-lagdameo/">
+            <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-linkedin-64.png">
+          </a>
+          <a href="https://github.com/Ninjangelo">
+            <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-github-64.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT ME -->
+  <section class="bg-rust h-screen pt-15 flex items-center px-19" id="about_me">
+    <div class="flex flex-row justify-between mt-5 gap-15 items-center">
+      <div class="text-white select-none">
+        <div class="flex flex-col pb-4 border-b-5">
+          <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3">
+            <h1 class="text-7xl/20 text-center">About Me</h1>
+          </div>
+        </div>
+        <div class="flex flex-col mt-4 font-righteous gap-y-7">
+          <p class="text-3xl">Kamusta, I'm Angelo!</p>
+          <p>
+            I’m a full-time undergraduate student currently studying for my BSc Computer Science course. My interest within the field of technology and computer science started from a high school
+            level that prolonged into me deciding to invest my career aspirations on it as I delved into associated subfields. I eventually came to the decision of taking it up as a course at Birmingham
+            City University to dive deeper in the field’s discipline.
+          </p>
+          <p>
+            My current interests and work revolve around the full-stack development, software engineering and most recently artificial intelligence and machine learning.
+          </p>
+          <p>
+            I consider myself as an all-rounder, team-player and hard working individual with limitless boundaries in taking a challenge and wanting to discover more about how the evolving world of technology 
+            effects our current day to day activity.
+          </p>
+        </div>
+      </div>
+      <div class="columns-2 gap-x-10">
+        <div class="flex flex-col gap-y-6">
+          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-63">
+            <div class="rounded-4xl">
+              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(1).jpeg" alt="about_me_picture_one"/>
             </div>
           </div>
-          <div class="flex flex-row ml-1 mt-4 gap-3 text-[17px] font-righteous">
-            <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">2nd Year BSc Computer Science Student</h1>
-            <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Full-Stack</h1>
-            <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Software Engineering</h1>
+          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-63">
+            <div class="rounded-4xl">
+              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(3).JPG" alt="about_me_picture_one"/>
+            </div>
           </div>
-          <div class="flex flex-row ml-1 mt-6 gap-3 text-[17px] font-righteous place-content-center">
-            <a href="#">
-              <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-linkedin-64.png">
-            </a>
-            <a href="#">
-              <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-github-64.png">
-            </a>
+        </div>
+        <div class="flex flex-col gap-y-6">
+          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-63">
+            <div class="rounded-4xl">
+              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(2).jpeg" alt="about_me_picture_one"/>
+            </div>
+          </div>
+          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-63">
+            <div class="rounded-4xl">
+              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(4).JPG" alt="about_me_picture_one"/>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Me -->
-    <section class="text-7xl">
-      About Me Section (In-Progress)
-    </section>
+  <!-- EDUCATION -->
+  <section class="bg-warm_orange h-screen pt-25 text-6xl">
+    (IN-PROGRESS)
+  </section>
+  <!-- PROJECTS -->
 
-    <!-- Education -->
-
-
-    <!-- Projects -->
-
-
-    <!-- Skills -->
-    
-
-    <!-- Experience -->
-    
-
-    <!-- Contact Me -->
+  <!-- SKILLS -->
+  
+  <!-- EXPERIENCE -->
+  
+  <!-- CONTACT ME -->
+  
   <!-- </div> -->
   <!-- <script src="loader.js"></script> -->
   
