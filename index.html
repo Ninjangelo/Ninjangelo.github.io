@@ -153,27 +153,41 @@
     </div>
     <!-- TIMELINE -->
     <div class="relative mx-20 flex flex-col gap-y-30 mt-16">
-      <!-- Vertical Line -->
-      <div class="absolute z-0 pt-90 w-2 bg-rust left-1/3 translate-x-2.5 top-15.5 bottom-25.5 rounded-3xl"></div>
-      
-
+      <!-- TIMELINE LINE -->
+      <div class="absolute z-0 pt-90 w-2 bg-rust left-1/3 translate-x-2.5 top-15.5 bottom-59.5 rounded-3xl"></div>
       <!-- BARTLEY GREEN SCHOOL -->
       <div class="relative z-10 w-full">
         <!-- TIMELINE DOT -->
         <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full shadow-xl border-4 border-white flex items-center justify-center">
           <div class="absolute h-17 w-17 bg-white rounded-full shadow-xl flex items-center justify-center"></div>
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-row items-start">
           <!-- EDUCATION YEAR -->
-          <div class="mr-25.5 rounded-lg p-5 mb-12 text-white flex justify-center items-center  text-shadow-lg/40 border-10 border-double">
+          <div class="mr-25.5 rounded-lg p-5 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
             <h2 class="text-5xl font-bebas_neue">Sep 2016 - Jun 2021</h2>
           </div>
           <!-- INFORMATION BOX -->
-          <div class="flex flex-col ml-25.5 mt-5 w-190 min-w-0">
-            <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
-              <h3 class="font-bebas_neue text-3xl">Bartley Green School</h3>
-              <p class="font-righteous mt-1">GCSEs</p>
-              <p class="font-righteous mt-4 break-words">[Pending Description]</p>
+          <div class="flex flex-col ml-25.5 w-190 min-w-0">
+            <div class="bg-rust p-5 rounded-lg shadow-xl text-white">
+              <div class="flex flex-row gap-x-5">
+                <div>
+                  <h3 class="font-bebas_neue text-5xl">Bartley Green School</h3>
+                  <h3 class="font-bebas_neue text-2xl">Secondary School</h3>
+                </div>
+                <div class="ml-auto">
+                  <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">GCSEs</p>
+                </div>
+              </div>
+              <div class="mt-5 font-righteous">
+                <ul class="list-inside list-disc space-y-3">
+                  <li>Studied and achieved 8 GCSE qualification ranging from a grade 5 to 7</li>
+                  <li>Early interest developed into the field of Computer Science</li>
+                </ul>
+              </div>
+              <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                <div>More details</div>
+                <img src="resources/icons/arrow_circle.png">
+              </button>
             </div>
           </div>
         </div>
@@ -184,17 +198,34 @@
         <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full shadow-xl border-4 border-white flex items-center justify-center">
           <div class="absolute h-17 w-17 bg-white rounded-full shadow-xl flex items-center justify-center"></div>
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-row items-start">
           <!-- EDUCATION YEAR -->
-          <div class="mr-25.5 rounded-lg p-5 mb-12 text-white flex justify-center items-center  text-shadow-lg/40 border-10 border-double">
+          <div class="mr-24 rounded-lg p-5 mb-12 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
             <h2 class="text-5xl font-bebas_neue">Sep 2021 - Aug 2023</h2>
           </div>
           <!-- INFORMATION BOX -->
-          <div class="flex flex-col ml-25.5 mt-5 w-190 min-w-0">
+          <div class="flex flex-col ml-25.5 w-190 min-w-0">
             <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
-              <h3 class="font-bebas_neue text-3xl">Cadbury Sixth Form College</h3>
-              <p class="font-righteous mt-1">A-Levels</p>
-              <p class="font-righteous mt-4 break-words">[Pending Description]</p>
+              <div class="flex flex-row gap-x-5">
+                <div>
+                  <h3 class="font-bebas_neue text-5xl">Cadbury Sixth Form College</h3>
+                  <h3 class="font-bebas_neue text-2xl">Sixth Form</h3>
+                </div>
+                <div class="ml-auto">
+                  <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">A-Levels</p>
+                </div>
+              </div>
+              <div class="mt-5 font-righteous">
+                <ul class="list-inside list-disc space-y-3">
+                  <li>Studied and achieved 2 A-Level and 1 BTEC Level 3 National Extended Certificate qualification</li>
+                  <li>Further developed my interest in Computer Science as an A-Level course</li>
+                  <li>Volunteered as an BTEC Engineering Student Ambassador</li>
+                </ul>
+              </div>
+              <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                <div>More details</div>
+                <img src="resources/icons/arrow_circle.png">
+              </button>
             </div>
           </div>
         </div>
@@ -207,15 +238,31 @@
         </div>
         <div class="flex flex-row">
           <!-- EDUCATION YEAR -->
-          <div class="mr-25.5 rounded-lg p-5 mb-12 text-white flex justify-center items-center  text-shadow-lg/40 border-10 border-double">
+          <div class="mr-27.5 rounded-lg p-5 mb-50 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
             <h2 class="text-5xl font-bebas_neue">Sep 2023 - Present</h2>
           </div>
           <!-- INFORMATION BOX -->
-          <div class="flex flex-col ml-25.5 mt-5 w-190 min-w-0">
+          <div class="flex flex-col ml-25.5 w-190 min-w-0">
             <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
-              <h3 class="font-bebas_neue text-3xl">Birmingham City University</h3>
-              <p class="font-righteous mt-1">BSc Computer Science</p>
-              <p class="font-righteous mt-4 break-words">[Pending Description]</p>
+              <div class="flex flex-row gap-x-5">
+                <div>
+                  <h3 class="font-bebas_neue text-5xl">Birmingham City University</h3>
+                  <h3 class="font-bebas_neue text-2xl">Undergraduate Degree</h3>
+                </div>
+                <div class="ml-auto">
+                  <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">BSc Computer Science</p>
+                </div>
+              </div>
+              <div class="mt-5 font-righteous">
+                <ul class="list-inside list-disc space-y-3">
+                  <li>Studied and achieved 8 GCSE qualification ranging from a grade 5 to 7</li>
+                  <li>Early interest developed into the field of Computer Science</li>
+                </ul>
+              </div>
+              <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                <div>More details</div>
+                <img src="resources/icons/arrow_circle.png">
+              </button>
             </div>
           </div>
         </div>
