@@ -215,6 +215,9 @@
   .bottom-25\.5 {
     bottom: calc(var(--spacing) * 25.5);
   }
+  .bottom-59 {
+    bottom: calc(var(--spacing) * 59);
+  }
   .bottom-59\.5 {
     bottom: calc(var(--spacing) * 59.5);
   }
