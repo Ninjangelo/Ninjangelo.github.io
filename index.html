@@ -6,11 +6,20 @@
   <!-- Viewport Settings -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Website Tab Title -->
-   <!-- TailwindCSS CDN Link (TEMPORARY) -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <!-- TailwindCSS CDN Link (TEMPORARY) 
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   <!-- Swiper.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+  <!-- EmailJS CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init({
+        publicKey: "ETd_MNbvhSb8LUd8V",
+      });
+    })();
+  </script>
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/new.css" />
 </head>
@@ -364,6 +373,7 @@
         <div class="mr-28">
           <h2 class="font-bebas_neue text-white text-6xl">Direct Message</h2>
           <div class="flex flex-col my-6 gap-y-4">
+            <input type="hidden" name="time" value="Mar 10 2025 08:46">
             <label class="font-righteous text-2xl text-white">Name</label>
             <input type="text" name="name" class="bg-white border-amber-900 border-3 p-2" required>
             <label class="font-righteous text-2xl text-white">Email</label>
@@ -383,6 +393,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="node_modules/swiper/swiper-bundle.js"></script>
   <script src="javascript/swiper-init.js"></script>
-  <script type="module" src="JS/contact-form.js"></script>
+  <!-- <script type="module" src="JS/contact-form.js"></script> -->
 </body>
 </html>
