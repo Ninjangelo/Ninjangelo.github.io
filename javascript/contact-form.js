@@ -6,7 +6,7 @@ emailjs.init({
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    emailjs.sendForm('contact_service', 'contact_form', this)
+    emailjs.sendForm('service_7t5l6j4', 'template_finzdvt', this)
     .then(() => {
         console.log('SUCCESS!');
     }, (error) => {
