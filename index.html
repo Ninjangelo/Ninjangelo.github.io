@@ -6,8 +6,10 @@
   <!-- Viewport Settings -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Website Tab Title -->
-   <!-- TailwindCSS CDN Link (TEMPORARY) 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+   <!-- TailwindCSS CDN Link (TEMPORARY) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles/new.css" />
   <!-- Swiper.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
@@ -21,281 +23,352 @@
     })();
   </script>
   <script type="text/javascript">
-  window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              emailjs.sendForm('service_7t5l6j4', 'template_finzdvt', '#contact-form')
-                  .then(() => {
-                      console.log('SUCCESS!');
-                  }, (error) => {
-                      console.log('FAILED...', error);
-                  });
-          });
-      }
-    </script>
-  <!-- CSS Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="styles/new.css" />
+    window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_7t5l6j4', 'template_finzdvt', '#contact-form')
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+  </script>
 </head>
 
 <body>
   <!-- <div id="loader" class="loader"></div> -->
   <!-- Navbar + Hero -->
   <!-- <div id="content" class="hidden"> -->
-  
-  <!-- NAVBAR -->
-  <div class="fixed top-0 w-full z-50">
-    <div class="flex flex-row justify-center p-4 font-righteous items-center">
-      <nav class="flex p-4 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
-        <a class="text-3xl font-bebas_neue" href="#hero">Angelo</a>
-      </nav>
-      <nav class="py-5 bg-black rounded-2xl text-white mx-68">
-        <ul class="flex flex-row divide-x-2">
-          <li>
-            <a class="text-lg mx-5" href="#about_me">About Me</a>
-          </li>
-          <li>
-            <a class="text-lg mx-5" href="#education">Education</a>
-          </li>
-          <li>
-            <a class="text-lg mx-5" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a class="text-lg mx-5" class="mr-3" href="#skills">Skills</a>
-          </li>
-          <li>
-            <a class="text-lg mx-5" href="#experience">Experience</a>
-          </li>
-          <li>
-            <a class="text-lg mx-5" href="#contact_me">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="flex p-5 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
-        <a href="#" title="still being worked on... :'D">
-          <img src="resources/icons/night-mode.png">
-        </a>
-      </nav>
-    </div>
-  </div>
-  <!-- HERO -->
-  <section class="bg-warm_orange h-screen pt-25 items-center" id="hero">
-    <div class="flex flex-row mt-8 gap-x-10 items-center justify-center">
-      <div>
-        <div class="bg-rust py-9 px-9 rounded-4xl shadow-xl/45">
-          <img class="h-120 object-cover rounded-4xl" src="/resources/images/headshot_angelo.JPG" alt="angelo__headshot"/>
-        </div>
-      </div>
-      <div class="text-white">
-        <div class="flex flex-col pb-4 border-b-5">
-          <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3 select-none">
-            <h1 class="text-7xl">Angelo Luis</h1>
-            <h2 class="text-9xl/30">Lagdameo</h2>
-          </div>
-        </div>
-        <div class="flex flex-row mt-4 mx-3 gap-3 text-[17px] font-righteous select-none">
-          <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">3rd Year BSc Computer Science Student</h1>
-          <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Full-Stack</h1>
-          <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Software Engineering</h1>
-        </div>
-        <div class="flex flex-row ml-1 mt-6 gap-3 text-[17px] font-righteous place-content-center">
-          <a href="https://www.linkedin.com/in/angelo-luis-lagdameo/">
-            <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-linkedin-64.png">
-          </a>
-          <a href="https://github.com/Ninjangelo">
-            <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-github-64.png">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ABOUT ME -->
-  <section class="bg-rust h-screen pt-15 flex items-center px-20" id="about_me">
-    <div class="flex flex-row justify-between mt-5 gap-26 items-center">
-      <div class="flex flex-row">
-        <div class="flex flex-col text-white select-none">
-          <div class="pb-4 border-b-5">
-            <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3">
-              <h1 class="text-8xl/30 text-center">About Me</h1>
-            </div>
-          </div>
-          <!-- ABOUT ME DESCRIPTION -->
-          <div class="flex flex-col mt-4 font-righteous gap-y-7">
-            <p class="text-3xl">Kamusta, I'm Angelo!</p>
-            <p>
-              I’m a full-time undergraduate student currently studying for my BSc Computer Science course. My interest within the field of technology and computer science started from a high school
-              level that prolonged into me deciding to invest my career aspirations on it as I delved into associated subfields. I eventually came to the decision of taking it up as a course at Birmingham
-              City University to dive deeper in the field’s discipline.
-            </p>
-            <p>
-              My current interests and work revolve around the full-stack development, software engineering and most recently artificial intelligence and machine learning.
-            </p>
-            <p>
-              I consider myself as an all-rounder, team-player and hard working individual with limitless boundaries in taking a challenge and wanting to discover more about how the evolving world of technology 
-              effects our current day to day activity.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- ABOUT ME IMAGES -->
-      <div class="columns-2 gap-x-12">
-        <div class="flex flex-col gap-y-6">
-          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
-            <div class="rounded-4xl">
-              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(1).jpeg" alt="about_me_picture_one"/>
-            </div>
-          </div>
-          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
-            <div class="rounded-4xl">
-              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(3).JPG" alt="about_me_picture_one"/>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col gap-y-6">
-          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
-            <div class="rounded-4xl">
-              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(2).jpeg" alt="about_me_picture_one"/>
-            </div>
-          </div>
-          <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
-            <div class="rounded-4xl">
-              <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(4).JPG" alt="about_me_picture_one"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- EDUCATION -->
-  <section class="bg-warm_orange pt-25 pb-7" id="education">
-    <div class="flex justify-center mt-5">
-      <div class="pb-4 border-b-5 text-white select-none">
-        <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
-          <h1 class="text-8xl/30 text-center">Education</h1>
-        </div>
+  <!-- From Uiverse.io by Javierrocadev 
+  <div id="loader" class="fixed inset-0 flex bg-white z-50 transition-opacity duration-500 justify-center items-center">
+    <div class="flex flex-row gap-2">
+      <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+      <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
+      <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+    </div>
+  </div> -->
+  
+  <div id="mainContent">
+    <!-- NAVBAR -->
+    <div class="fixed top-0 w-full z-50">
+      <div class="flex flex-row justify-center p-4 font-righteous items-center">
+        <nav class="flex p-4 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
+          <a class="text-3xl font-bebas_neue" href="#hero">Angelo</a>
+        </nav>
+        <nav class="py-5 bg-black rounded-2xl text-white mx-68">
+          <ul class="flex flex-row divide-x-2">
+            <li>
+              <a class="text-lg mx-5" href="#about_me">About Me</a>
+            </li>
+            <li>
+              <a class="text-lg mx-5" href="#education">Education</a>
+            </li>
+            <li>
+              <a class="text-lg mx-5" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="text-lg mx-5" class="mr-3" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="text-lg mx-5" href="#experience">Experience</a>
+            </li>
+            <li>
+              <a class="text-lg mx-5" href="#contact_me">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="flex p-5 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
+          <a href="#" title="still being worked on... :'D">
+            <img src="resources/icons/night-mode.png">
+          </a>
+        </nav>
       </div>
     </div>
-    <!-- TIMELINE -->
-    <div class="relative mx-20 flex flex-col gap-y-30 mt-16">
-      <!-- TIMELINE LINE -->
-      <div class="absolute z-0 pt-90 w-2 bg-rust left-1/3 translate-x-2.5 top-15.5 bottom-59.5 rounded-3xl"></div>
-      <!-- BARTLEY GREEN SCHOOL -->
-      <div class="relative z-10 w-full">
-        <!-- TIMELINE DOT -->
-        <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full border-4 border-white flex items-center justify-center">
-          <div class="absolute h-17 w-17 bg-white rounded-full flex items-center justify-center"></div>
-        </div>
-        <div class="flex flex-row items-start">
-          <!-- EDUCATION YEAR -->
-          <div class="mr-25.5 rounded-lg p-5 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
-            <h2 class="text-5xl font-bebas_neue">Sep 2016 - Jun 2021</h2>
+    <!-- HERO -->
+    <section class="bg-warm_orange h-screen pt-25 items-center" id="hero">
+      <div class="flex flex-row mt-8 gap-x-10 items-center justify-center">
+        <div>
+          <div class="bg-rust py-9 px-9 rounded-4xl shadow-xl/45">
+            <img class="h-120 object-cover rounded-4xl" src="/resources/images/headshot_angelo.JPG" alt="angelo__headshot"/>
           </div>
-          <!-- INFORMATION BOX -->
-          <div class="flex flex-col ml-25.5 w-190 min-w-0">
-            <div class="bg-rust p-5 rounded-lg shadow-xl text-white">
-              <div class="flex flex-row gap-x-5">
-                <div>
-                  <h3 class="font-bebas_neue text-5xl">Bartley Green School</h3>
-                  <h3 class="font-bebas_neue text-2xl">Secondary School</h3>
-                </div>
-                <div class="ml-auto">
-                  <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">GCSEs</p>
-                </div>
-              </div>
-              <div class="mt-5 pl-4 font-righteous">
-                <ul class="list-outside list-disc space-y-3">
-                  <li>Studied and achieved 8 GCSE qualification ranging from a grade 5 to 7</li>
-                  <li>Early interest developed into the field of Computer Science</li>
-                </ul>
-              </div>
-              <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
-                <div>More details</div>
-                <img src="resources/icons/arrow_circle.png">
-              </button>
+        </div>
+        <div class="text-white">
+          <div class="flex flex-col pb-4 border-b-5">
+            <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3 select-none">
+              <h1 class="text-7xl">Angelo Luis</h1>
+              <h2 class="text-9xl/30">Lagdameo</h2>
             </div>
+          </div>
+          <div class="flex flex-row mt-4 mx-3 gap-3 text-[17px] font-righteous select-none">
+            <h1 class="p-3 bg-rust rounded-4xl shadow-xl/">3rd Year BSc Computer Science Student</h1>
+            <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Full-Stack</h1>
+            <h1 class="p-3 bg-rust rounded-4xl shadow-xl/30">Software Engineering</h1>
+          </div>
+          <div class="flex flex-row ml-1 mt-6 gap-3 text-[17px] font-righteous place-content-center">
+            <a href="https://www.linkedin.com/in/angelo-luis-lagdameo/">
+              <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-linkedin-64.png">
+            </a>
+            <a href="https://github.com/Ninjangelo">
+              <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-github-64.png">
+            </a>
           </div>
         </div>
       </div>
-      <!-- CADBURY SIXTH FORM COLLEGE  -->
-      <div class="relative z-10 w-full">
-        <!-- TIMELINE DOT -->
-        <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full border-4 border-white flex items-center justify-center">
-          <div class="absolute h-17 w-17 bg-white rounded-full flex items-center justify-center"></div>
-        </div>
-        <div class="flex flex-row items-start">
-          <!-- EDUCATION YEAR -->
-          <div class="mr-24 rounded-lg p-5 mb-12 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
-            <h2 class="text-5xl font-bebas_neue">Sep 2021 - Aug 2023</h2>
-          </div>
-          <!-- INFORMATION BOX -->
-          <div class="flex flex-col ml-25.5 w-190 min-w-0">
-            <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
-              <div class="flex flex-row gap-x-5">
-                <div>
-                  <h3 class="font-bebas_neue text-5xl">Cadbury Sixth Form College</h3>
-                  <h3 class="font-bebas_neue text-2xl">Sixth Form</h3>
-                </div>
-                <div class="ml-auto">
-                  <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">A-Levels</p>
-                </div>
-              </div>
-              <div class="mt-5 pl-4 font-righteous">
-                <ul class="list-outside list-disc space-y-3">
-                  <li>Studied and achieved 2 A-Level and 1 BTEC Level 3 National Extended Certificate qualification</li>
-                  <li>Further developed my interest in Computer Science as an A-Level course</li>
-                  <li>Volunteered as an BTEC Engineering Student Ambassador</li>
-                </ul>
-              </div>
-              <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
-                <div>More details</div>
-                <img src="resources/icons/arrow_circle.png">
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- BIRMINGHAM CITY UNIVERSITY  -->
-      <div class="relative z-10 w-full">
-        <!-- TIMELINE DOT -->
-        <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full border-4 border-white flex items-center justify-center">
-          <div class="absolute h-17 w-17 bg-white rounded-full flex items-center justify-center"></div>
-        </div>
+    </section>
+    <!-- ABOUT ME -->
+    <section class="bg-rust h-screen pt-15 flex items-center px-20" id="about_me">
+      <div class="flex flex-row justify-between mt-5 gap-26 items-center">
         <div class="flex flex-row">
-          <!-- EDUCATION YEAR -->
-          <div class="mr-27.5 rounded-lg p-5 mb-50 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
-            <h2 class="text-5xl font-bebas_neue">Sep 2023 - Present</h2>
+          <div class="flex flex-col text-white select-none">
+            <div class="pb-4 border-b-5">
+              <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3">
+                <h1 class="text-8xl/30 text-center">About Me</h1>
+              </div>
+            </div>
+            <!-- ABOUT ME DESCRIPTION -->
+            <div class="flex flex-col mt-4 font-righteous gap-y-7">
+              <p class="text-3xl">Kamusta, I'm Angelo!</p>
+              <p>
+                I’m a full-time undergraduate student currently studying for my BSc Computer Science course. My interest within the field of technology and computer science started from a high school
+                level that prolonged into me deciding to invest my career aspirations on it as I delved into associated subfields. I eventually came to the decision of taking it up as a course at Birmingham
+                City University to dive deeper in the field’s discipline.
+              </p>
+              <p>
+                My current interests and work revolve around the full-stack development, software engineering and most recently artificial intelligence and machine learning.
+              </p>
+              <p>
+                I consider myself as an all-rounder, team-player and hard working individual with limitless boundaries in taking a challenge and wanting to discover more about how the evolving world of technology 
+                effects our current day to day activity.
+              </p>
+            </div>
           </div>
-          <!-- INFORMATION BOX -->
-          <div class="flex flex-col ml-25.5 w-190 min-w-0">
-            <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
-              <div class="flex flex-row gap-x-5">
-                <div>
-                  <h3 class="font-bebas_neue text-5xl">Birmingham City University</h3>
-                  <h3 class="font-bebas_neue text-2xl">Undergraduate Degree</h3>
-                </div>
-                <div class="ml-auto">
-                  <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">BSc Computer Science</p>
-                </div>
+        </div>
+        <!-- ABOUT ME IMAGES -->
+        <div class="columns-2 gap-x-12">
+          <div class="flex flex-col gap-y-6">
+            <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
+              <div class="rounded-4xl">
+                <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(1).jpeg" alt="about_me_picture_one"/>
               </div>
-              <div class="mt-5 pl-4 font-righteous">
-                <ul class="list-outside list-disc space-y-3">
-                  <li>On track to a First-Class Degree (75.5%)</li>
-                  <li>Year 1 Innovation Project Team placed 1st for "Best Entrepeneurial Project"</li>
-                </ul>
+            </div>
+            <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
+              <div class="rounded-4xl">
+                <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(3).JPG" alt="about_me_picture_one"/>
               </div>
-              <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
-                <div>More details</div>
-                <img src="resources/icons/arrow_circle.png">
-              </button>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
+              <div class="rounded-4xl">
+                <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(2).jpeg" alt="about_me_picture_one"/>
+              </div>
+            </div>
+            <div class="bg-warm_orange p-4 rounded-4xl shadow-xl/45 w-64">
+              <div class="rounded-4xl">
+                <img class="w-full h-full object-cover rounded-3xl" src="/resources/images/about_me(4).JPG" alt="about_me_picture_one"/>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <!-- PROJECTS -->
-  <section class="bg-rust h-screen pt-26 pb-5 px-20 flex flex-row items-center relative gap-x-12" id="projects">
-    <div class="text-6xl text-white font-bebas_neue text-shadow-lg/40 flex flex-col items-center justify-center border-8 border-double p-8">
-      <div class="select-none">
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="bg-warm_orange pt-25 pb-7" id="education">
+      <div class="flex justify-center mt-5">
+        <div class="pb-4 border-b-5 text-white select-none">
+          <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
+            <h1 class="text-8xl/30 text-center">Education</h1>
+          </div>
+        </div>
+      </div>
+      <!-- TIMELINE -->
+      <div class="relative mx-20 flex flex-col gap-y-30 mt-16">
+        <!-- TIMELINE LINE -->
+        <div class="absolute z-0 pt-90 w-2 bg-rust left-1/3 translate-x-2.5 top-15.5 bottom-59.5 rounded-3xl"></div>
+        <!-- BARTLEY GREEN SCHOOL -->
+        <div class="relative z-10 w-full">
+          <!-- TIMELINE DOT -->
+          <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full border-4 border-white flex items-center justify-center">
+            <div class="absolute h-17 w-17 bg-white rounded-full flex items-center justify-center"></div>
+          </div>
+          <div class="flex flex-row items-start">
+            <!-- EDUCATION YEAR -->
+            <div class="mr-25.5 rounded-lg p-5 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
+              <h2 class="text-5xl font-bebas_neue">Sep 2016 - Jun 2021</h2>
+            </div>
+            <!-- INFORMATION BOX -->
+            <div class="flex flex-col ml-25.5 w-190 min-w-0">
+              <div class="bg-rust p-5 rounded-lg shadow-xl text-white">
+                <div class="flex flex-row gap-x-5">
+                  <div>
+                    <h3 class="font-bebas_neue text-5xl">Bartley Green School</h3>
+                    <h3 class="font-bebas_neue text-2xl">Secondary School</h3>
+                  </div>
+                  <div class="ml-auto">
+                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">GCSEs</p>
+                  </div>
+                </div>
+                <div class="mt-5 pl-4 font-righteous">
+                  <ul class="list-outside list-disc space-y-3">
+                    <li>Studied and achieved 8 GCSE qualification ranging from a grade 5 to 7</li>
+                    <li>Early interest developed into the field of Computer Science</li>
+                  </ul>
+                </div>
+                <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                  <div>More details</div>
+                  <img src="resources/icons/arrow_circle.png">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CADBURY SIXTH FORM COLLEGE  -->
+        <div class="relative z-10 w-full">
+          <!-- TIMELINE DOT -->
+          <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full border-4 border-white flex items-center justify-center">
+            <div class="absolute h-17 w-17 bg-white rounded-full flex items-center justify-center"></div>
+          </div>
+          <div class="flex flex-row items-start">
+            <!-- EDUCATION YEAR -->
+            <div class="mr-24 rounded-lg p-5 mb-12 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
+              <h2 class="text-5xl font-bebas_neue">Sep 2021 - Aug 2023</h2>
+            </div>
+            <!-- INFORMATION BOX -->
+            <div class="flex flex-col ml-25.5 w-190 min-w-0">
+              <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
+                <div class="flex flex-row gap-x-5">
+                  <div>
+                    <h3 class="font-bebas_neue text-5xl">Cadbury Sixth Form College</h3>
+                    <h3 class="font-bebas_neue text-2xl">Sixth Form</h3>
+                  </div>
+                  <div class="ml-auto">
+                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">A-Levels</p>
+                  </div>
+                </div>
+                <div class="mt-5 pl-4 font-righteous">
+                  <ul class="list-outside list-disc space-y-3">
+                    <li>Studied and achieved 2 A-Level and 1 BTEC Level 3 National Extended Certificate qualification</li>
+                    <li>Further developed my interest in Computer Science as an A-Level course</li>
+                    <li>Volunteered as an BTEC Engineering Student Ambassador</li>
+                  </ul>
+                </div>
+                <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                  <div>More details</div>
+                  <img src="resources/icons/arrow_circle.png">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BIRMINGHAM CITY UNIVERSITY  -->
+        <div class="relative z-10 w-full">
+          <!-- TIMELINE DOT -->
+          <div class="absolute left-1/3 -translate-x-1/3 top-5.5 h-21 w-21 rounded-full border-4 border-white flex items-center justify-center">
+            <div class="absolute h-17 w-17 bg-white rounded-full flex items-center justify-center"></div>
+          </div>
+          <div class="flex flex-row">
+            <!-- EDUCATION YEAR -->
+            <div class="mr-27.5 rounded-lg p-5 mb-50 text-white flex justify-center items-center text-shadow-lg/40 border-10 border-double">
+              <h2 class="text-5xl font-bebas_neue">Sep 2023 - Present</h2>
+            </div>
+            <!-- INFORMATION BOX -->
+            <div class="flex flex-col ml-25.5 w-190 min-w-0">
+              <div class="bg-rust p-6 rounded-lg shadow-xl text-white">
+                <div class="flex flex-row gap-x-5">
+                  <div>
+                    <h3 class="font-bebas_neue text-5xl">Birmingham City University</h3>
+                    <h3 class="font-bebas_neue text-2xl">Undergraduate Degree</h3>
+                  </div>
+                  <div class="ml-auto">
+                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">BSc Computer Science</p>
+                  </div>
+                </div>
+                <div class="mt-5 pl-4 font-righteous">
+                  <ul class="list-outside list-disc space-y-3">
+                    <li>On track to a First-Class Degree (75.5%)</li>
+                    <li>Year 1 Innovation Project Team placed 1st for "Best Entrepeneurial Project"</li>
+                  </ul>
+                </div>
+                <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                  <div>More details</div>
+                  <img src="resources/icons/arrow_circle.png">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="bg-rust h-screen pt-26 pb-10 px-20 flex flex-row items-center relative gap-x-12" id="projects">
+      <div class="text-6xl text-white font-bebas_neue text-shadow-lg/40 flex flex-col items-center justify-center border-8 border-double p-8">
+        <div class="select-none">
+          <h1>P</h1>
+          <h1>R</h1>
+          <h1>O</h1>
+          <h1>J</h1>
+          <h1>E</h1>
+          <h1>C</h1>
+          <h1>T</h1>
+          <h1>S</h1>
+        </div>
+      </div>
+      <div class="swiper mySwiper rounded-xl border-7 border-white">
+        <div class="swiper-wrapper">
+          <!-- Spelling Wizard Practice -->
+          <div class="swiper-slide inset-shadow-2xs relative">
+            <a class="block h-full w-full" href="#spelling_wizard_practice_page">
+              <div class="h-full w-full flex items-center justify-center">
+                <img class="object-cover h-full w-full" src="resources/images/spelling_wizard_practice.png" alt="spelling_wizard_practice_project">
+                <h2 class="absolute flex items-center justify-center bottom-11 text-[120px] font-bebas_neue leading-none text-white text-shadow-lg/100">Spelling Wizard Practice</h2>
+              </div>
+            </a>
+          </div>
+          <!-- Deskacito -->
+          <div class="swiper-slide inset-shadow-2xs relative">
+            <a class="block h-full w-full" href="#deskacito_page">
+              <div class="h-full w-full flex items-center justify-center">
+                <img class="object-cover h-full w-full" src="resources/images/deskacito_slide.JPG" alt="deskacito_preview">
+                <h2 class="absolute flex items-center justify-center text-[180px] text-white bottom-7 font-bebas_neue leading-none text-shadow-lg/100">Deskacito</h2>
+              </div>
+            </a>
+          </div>
+          <!-- Amped Beats -->
+          <div class="swiper-slide inset-shadow-2xs relative">
+            <a class="block h-full w-full" href="#amped_beats">
+              <div class="h-full w-full flex items-center justify-center">
+                <img class="object-cover h-full w-full" src="resources/images/amped_beats.png" alt="amped_beats_preview">
+                <h2 class="absolute flex items-center justify-center text-[180px] text-white bottom-7 font-bebas_neue leading-none text-shadow-lg/100">Amped Beats</h2>
+              </div>
+            </a>
+          </div>
+          <!-- BMW Group: Plant Hams Hall -->
+          <div class="swiper-slide inset-shadow-2xs relative">
+            <a class="block h-full w-full" href="#bmwgroup_plant_hams_hall">
+              <div class="h-full w-full flex items-center justify-center">
+                <img class="object-cover h-full w-full" src="resources/images/amped_beats.png" alt="deskacito_project">
+                <h2 class="absolute flex items-center justify-center text-center text-[85px] text-white bottom-17 font-bebas_neue leading-none text-shadow-lg/100">BMW Group Plant Hams Hall</h2>
+                <h2 class="absolute flex items-center justify-center text-center text-[60px] text-white bottom-7 font-bebas_neue leading-none text-shadow-lg/100">Physical Asset Tracking Vision Platform</h2>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full w-full flex items-center justify-center bg-gray-200">PENDING...</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full w-full flex items-center justify-center bg-gray-200">PENDING...</div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="text-6xl text-white font-bebas_neue text-shadow-lg/40 flex flex-col items-center justify-center border-8 border-double p-8">
         <h1>P</h1>
         <h1>R</h1>
         <h1>O</h1>
@@ -305,85 +378,22 @@
         <h1>T</h1>
         <h1>S</h1>
       </div>
-    </div>
-    <div class="swiper mySwiper rounded-xl border-7 border-white">
-      <div class="swiper-wrapper">
-        <!-- Spelling Wizard Practice -->
-        <div class="swiper-slide inset-shadow-2xs relative">
-          <a class="block h-full w-full" href="#spelling_wizard_practice_page">
-            <div class="h-full w-full flex items-center justify-center">
-              <img class="object-cover h-full w-full" src="resources/images/spelling_wizard_practice.png" alt="spelling_wizard_practice_project">
-              <h2 class="absolute flex items-center justify-center bottom-11 text-[120px] font-bebas_neue leading-none text-white text-shadow-lg/100">Spelling Wizard Practice</h2>
-            </div>
-          </a>
-        </div>
-        <!-- Deskacito -->
-        <div class="swiper-slide inset-shadow-2xs relative">
-          <a class="block h-full w-full" href="#deskacito_page">
-            <div class="h-full w-full flex items-center justify-center">
-              <img class="object-cover h-full w-full" src="resources/images/deskacito_slide.JPG" alt="deskacito_project">
-              <h2 class="absolute flex items-center justify-center text-[180px] text-white bottom-7 font-bebas_neue leading-none text-shadow-lg/100">Deskacito</h2>
-            </div>
-          </a>
-        </div>
-        <!-- Amped Beats -->
-        <div class="swiper-slide inset-shadow-2xs relative">
-          <a class="block h-full w-full" href="#deskacito_page">
-            <div class="h-full w-full flex items-center justify-center">
-              <img class="object-cover h-full w-full" src="resources/images/amped_beats.png" alt="deskacito_project">
-              <h2 class="absolute flex items-center justify-center text-[180px] text-white bottom-7 font-bebas_neue leading-none text-shadow-lg/100">Amped Beats</h2>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide inset-shadow-2xs relative">
-          <a class="block h-full w-full" href="#deskacito_page">
-            <div class="h-full w-full flex items-center justify-center">
-              <img class="object-cover h-full w-full" src="resources/images/amped_beats.png" alt="deskacito_project">
-              <h2 class="absolute flex items-center justify-center text-center text-[85px] text-white bottom-17 font-bebas_neue leading-none text-shadow-lg/100">BMW Group Plant Hams Hall</h2>
-              <h2 class="absolute flex items-center justify-center text-center text-[60px] text-white bottom-7 font-bebas_neue leading-none text-shadow-lg/100">Physical Asset Tracking Vision Platform</h2>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <div class="h-full w-full flex items-center justify-center bg-gray-200">PENDING...</div>
-        </div>
-        <div class="swiper-slide">
-          <div class="h-full w-full flex items-center justify-center bg-gray-200">PENDING...</div>
+    </section>
+    <!-- SKILLS & CERTIFICATIONS -->
+    
+    <!-- EXPERIENCE -->
+    
+    <!-- CONTACT ME -->
+    <section class="bg-warm_orange pt-25 items-center" id="contact_me">
+      <div class="flex justify-center mt-5">
+        <div class="pb-4 border-b-5 text-white select-none">
+          <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
+            <h1 class="text-8xl/30 text-center">Contacts</h1>
+          </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-    <div class="text-6xl text-white font-bebas_neue text-shadow-lg/40 flex flex-col items-center justify-center border-8 border-double p-8">
-      <h1>P</h1>
-      <h1>R</h1>
-      <h1>O</h1>
-      <h1>J</h1>
-      <h1>E</h1>
-      <h1>C</h1>
-      <h1>T</h1>
-      <h1>S</h1>
-    </div>
-  </section>
-  <!-- SKILLS & CERTIFICATIONS -->
-  
-  <!-- EXPERIENCE -->
-  
-  <!-- CONTACT ME -->
-  <section class="bg-warm_orange pt-25 items-center" id="contact_me">
-    <div class="flex justify-center mt-5 mb-5">
-      <div class="pb-4 border-b-5 text-white select-none">
-        <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
-          <h1 class="text-8xl/30 text-center">Contact Me</h1>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-row justify-center">
-      <form id="contact-form" class="bg-rust rounded-4xl p-7">
-        <div class="mr-28">
+      <div class="grid grid-flow-col grid-rows-1 grid-cols-5 gap-x-7 py-10 px-8">
+        <form id="contact-form" class="bg-rust rounded-4xl p-7 col-span-2">
           <h2 class="font-bebas_neue text-white text-6xl">Direct Message</h2>
           <div class="flex flex-col my-6 gap-y-4">
             <input type="hidden" name="time" value="Mar 10 2025 08:46">
@@ -396,15 +406,73 @@
             <label class="font-righteous text-2xl text-white">Message</label>
             <textarea name="message" class="bg-white border-amber-900 border-3 p-2" required></textarea>
           </div>
-            <input type="submit" value="Send" class="px-6 py-3 left-0 bg-white cursor-pointer hover:bg-gray-500 font-bebas_neue text-2xl">
+            <input type="submit" value="Send" class="font-bebas_neue text-2xl px-6 py-3 left-0 bg-white cursor-pointer hover:bg-gray-500">
+        </form>
+        <div class="flex flex-col col-span-3 gap-y-8 my-8">
+          <!-- COMMUNICATION LINKS -->
+          <div class="border-b-5 text-white">
+            <h2 class="font-bebas_neue text-5xl mx-2">Get in Touch!</h2>
+          </div>
+          <div class="grid grid-cols-3 gap-x-8 text-white font-righteous text-2xl">
+            <!-- EMAIL LINK -->
+            <div class="flex flex-col items-center justify-center text-center bg-rust rounded-4xl col-span-1 row-span-1">
+              <a href="#">
+                <div class="border-b-2 text-white pb-2">
+                  <img src="resources/icons/icons8-mail-120.png">
+                </div>
+                <div class="border-b-2 text-white py-1">
+                  <h3>Email</h3>
+                </div>
+              </a>
+              <div class="flex flex-col items-center">
+                <p class="text-center text-base">"Project Discussions/Work and Casual Communication"</p>
+              </div>
+            </div>
+            <!-- LINKEDIN LINK -->
+            <div class="flex flex-col items-center justify-center text-center bg-rust rounded-4xl col-span-1 row-span-1">
+              <a href="https://www.linkedin.com/in/angelo-luis-lagdameo" target="_blank">
+                <div class="border-b-2 text-white pb-2">
+                  <img src="resources/icons/icons8-linkedin-120.png">
+                </div>
+                <div class="border-b-2 text-white py-1">
+                  <h3>LinkedIn</h3>
+                </div>
+              </a>
+              <div class="flex flex-col items-center">
+                <p class="flex items-center text-center text-base">"Project Discussions/Work and Casual Communication"</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center bg-rust rounded-4xl col-span-1 row-span-1">
+              <a href="#">
+                <div class="border-b-2 text-white pb-2">
+                  <img src="resources/icons/icons8-discord-120.png">
+                </div>
+                <div class="border-b-2 text-white py-1">
+                  <h3>Discord</h3>
+                </div>
+              </a>
+              <div class="flex flex-col items-center">
+                <p class="text-center text-base">"Project Discussions/Work and Casual Communication"</p>
+              </div>
+            </div>
+          </div>
+          <!-- SOCIAL MEDIA -->
+          <div class="border-b-5 text-white">
+            <h2 class="font-bebas_neue text-5xl mx-2">Platforms</h2>
+          </div>
+          <div class="flex flex-row gap-x-7 text-white">
+            <div class="bg-rust rounded-4xl col-span-1 row-span-1 p-22">
+              GITHUB
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
-  </section>
-  <!-- <script src="loader.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="node_modules/swiper/swiper-bundle.js"></script>
-  <script src="javascript/swiper-init.js"></script>
-  <!-- <script type="module" src="JS/contact-form.js"></script> -->
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script src="javascript/swiper-init.js"></script>
+    <!-- <script src="javascript/loader.js"></script> -->
+    <!-- <script type="module" src="JS/contact-form.js"></script> -->
+  </div>
 </body>
 </html>
