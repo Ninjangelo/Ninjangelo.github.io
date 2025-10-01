@@ -319,7 +319,7 @@
         </div>
     </section>
     <!-- PROJECTS -->
-    <section class="bg-rust border-6 border-amber-900 h-screen pt-26 pb-10 px-20 flex flex-row items-center relative gap-x-12" id="projects">
+    <section class="bg-rust border-6 border-amber-900 h-screen pt-26 pb-10 px-20 flex flex-row items-center relative gap-x-12">
       <div class="text-6xl text-white font-bebas_neue text-shadow-lg/40 flex flex-col items-center justify-center border-8 border-double p-8">
         <div class="select-none">
           <h1>P</h1>
@@ -371,9 +371,6 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide">
-            <div class="h-full w-full flex items-center justify-center bg-gray-200">PENDING...</div>
-          </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -391,6 +388,28 @@
         <h1>T</h1>
         <h1>S</h1>
       </div>
+    </section>
+    <section class="bg-rust border-6 border-amber-900 h-screen pt-13 pb-190" id="projects">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="resources/images/spelling_wizard_practice_slide.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="resources/images/deskacito_slide.JPG"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="resources/images/amped_beats_slide.jpg" />
+          </div>
+          <div class="swiper-slide rounded-xl border-6 border-amber-900">
+            <img src="resources/images/bmw_slides.png" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
     </section>
     <!-- SKILLS & CERTIFICATIONS -->
     
@@ -418,7 +437,7 @@
             <label class="font-righteous text-2xl text-white">Subject</label>
             <input type="text" name="subject" class="bg-white border-amber-900 border-3 p-2" required>
             <label class="font-righteous text-2xl text-white">Message</label>
-            <textarea name="message" class="bg-white border-amber-900 border-3 p-2" required></textarea>
+            <textarea name="message" class="bg-white border-amber-900 border-3 p-2 resize-none h-70" required></textarea>
           </div>
             <input type="submit" value="Send" class="font-bebas_neue text-2xl px-6 py-3 left-0 bg-white cursor-pointer hover:bg-gray-500">
         </form>
@@ -475,18 +494,20 @@
           <div class="border-b-5 text-white">
             <h2 class="font-bebas_neue text-5xl mx-2">Platforms</h2>
           </div>
-          <!-- GITHUB -->
-          <div class="flex flex-col items-center justify-center text-center bg-rust rounded-4xl p-6 col-span-1 row-span-1">
-            <a href="https://github.com/Ninjangelo" target="_blank">
-              <div class="border-b-2 text-white pb-2">
-                <img src="resources/icons/icons8-github-120.png">
+          <div class="grid grid-cols-3 gap-x-8 text-white font-righteous text-2xl">
+            <!-- GITHUB -->
+            <div class="flex flex-col items-center justify-center text-center bg-rust rounded-4xl p-6 col-span-1 row-span-1">
+              <a href="https://github.com/Ninjangelo" target="_blank">
+                <div class="border-b-2 text-white pb-2">
+                  <img src="resources/icons/icons8-github-120.png">
+                </div>
+                <div class="border-b-2 text-white py-1 mb-4">
+                  <h3>Github</h3>
+                </div>
+              </a>
+              <div class="flex flex-col items-center">
+                <p class="flex items-center text-center text-base">Check out my Projects and Works in more Detail</p>
               </div>
-              <div class="border-b-2 text-white py-1 mb-4">
-                <h3>LinkedIn</h3>
-              </div>
-            </a>
-            <div class="flex flex-col items-center">
-              <p class="flex items-center text-center text-base">A Professional point of view of my Career Journey</p>
             </div>
           </div>
         </div>
