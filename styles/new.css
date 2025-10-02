@@ -373,9 +373,6 @@
   .h-120 {
     height: calc(var(--spacing) * 120);
   }
-  .h-\[800px\] {
-    height: 800px;
-  }
   .h-full {
     height: 100%;
   }
@@ -399,12 +396,6 @@
   }
   .w-190 {
     width: calc(var(--spacing) * 190);
-  }
-  .w-\[100px\] {
-    width: 100px;
-  }
-  .w-auto {
-    width: auto;
   }
   .w-full {
     width: 100%;
@@ -693,6 +684,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pt-13 {
+    padding-top: calc(var(--spacing) * 13);
+  }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
   }
@@ -717,17 +711,14 @@
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
-  .pb-100 {
-    padding-bottom: calc(var(--spacing) * 100);
+  .pb-190 {
+    padding-bottom: calc(var(--spacing) * 190);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
-  }
-  .align-middle {
-    vertical-align: middle;
   }
   .font-bebas_neue {
     font-family: var(--font-bebas_neue);
@@ -1056,23 +1047,23 @@
 }
 
 
-/* Ensure swiper container is centered */
 .swiper.mySwiper {
   margin: 0 auto;
+  overflow: visible;
 }
 
-/* Allow slides to determine their own width */
 .swiper-slide {
   width: auto !important;
 }
 
-.swiper-slide img {
-  border: #7b3306;
-  border-width: 40px;
-  border-radius: 5px;
-}
-
-/* Center the slides wrapper */
 .swiper-wrapper {
   align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  
+}
+
+.swiper-pagination-bullet-active {
+  color: #ffffff;
 }
