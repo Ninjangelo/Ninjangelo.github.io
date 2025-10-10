@@ -6,7 +6,12 @@ module.exports = {
     "./src/*.js",
     "./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'warm_orange': '#FFB280',
+        'rust': '#b34700',
+      },
+    },
   },
   plugins: [],
 }

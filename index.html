@@ -37,7 +37,7 @@
   </script>
 </head>
 
-<body class="overflow-x-hidden">
+<body>
   <!-- <div id="loader" class="loader"></div> -->
   <!-- Navbar + Hero -->
   <!-- <div id="content" class="hidden"> -->
@@ -58,7 +58,7 @@
         <nav class="flex p-4 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
           <a class="text-3xl font-bebas_neue" href="#hero">Angelo</a>
         </nav>
-        <nav class="py-5 bg-black rounded-2xl text-white mx-68">
+        <nav class="py-5 bg-black rounded-2xl text-white ml-60 mr-90">
           <ul class="flex flex-row divide-x-2">
             <li>
               <a class="text-lg mx-5" href="#about_me">About Me</a>
@@ -70,7 +70,7 @@
               <a class="text-lg mx-5" href="#projects">Projects</a>
             </li>
             <li>
-              <a class="text-lg mx-5" class="mr-3" href="#skills">Skills</a>
+              <a class="text-lg mx-5" href="#skills_certifications">Skills</a>
             </li>
             <li>
               <a class="text-lg mx-5" href="#experience">Experience</a>
@@ -80,11 +80,13 @@
             </li>
           </ul>
         </nav>
+        <!--
         <nav class="flex p-5 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
           <a href="#" title="still being worked on... :'D">
             <img src="resources/icons/night-mode.png">
           </a>
         </nav>
+        -->
       </div>
     </div>
     <!-- HERO -->
@@ -137,29 +139,27 @@
     <!-- ABOUT ME -->
     <section class="bg-rust h-screen pt-15 flex items-center px-20 border-6 border-amber-900" id="about_me">
       <div class="flex flex-row justify-between mt-5 gap-26 items-center">
-        <div class="flex flex-row">
-          <div class="flex flex-col text-white select-none">
-            <div class="pb-4 border-b-5">
-              <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3">
-                <h1 class="text-8xl/30 text-center">About Me</h1>
-              </div>
+        <div class="flex flex-col text-white select-none">
+          <div class="pb-4 border-b-5">
+            <div class="mx-4 font-bebas_neue text-shadow-lg/40 border-10 border-double p-3">
+              <h1 class="text-8xl/30 text-center">About Me</h1>
             </div>
-            <!-- ABOUT ME DESCRIPTION -->
-            <div class="flex flex-col mt-4 font-righteous gap-y-7">
-              <p class="text-3xl">Kamusta, I'm Angelo!</p>
-              <p>
-                I’m a full-time undergraduate student currently studying for my BSc Computer Science course. My interest within the field of technology and computer science started from a high school
-                level that prolonged into me deciding to invest my career aspirations on it as I delved into associated subfields. I eventually came to the decision of taking it up as a course at Birmingham
-                City University to dive deeper in the field’s discipline.
-              </p>
-              <p>
-                My current interests and work revolve around the full-stack development, software engineering and most recently artificial intelligence and machine learning.
-              </p>
-              <p>
-                I consider myself as an all-rounder, team-player and hard working individual with limitless boundaries in taking a challenge and wanting to discover more about how the evolving world of technology 
-                effects our current day to day activity.
-              </p>
-            </div>
+          </div>
+          <!-- ABOUT ME DESCRIPTION -->
+          <div class="flex flex-col mt-4 font-righteous gap-y-7">
+            <p class="text-3xl">Kamusta, I'm Angelo!</p>
+            <p>
+              I’m a full-time undergraduate student currently studying for my BSc Computer Science course. My interest within the field of technology and computer science started from a high school
+              level that prolonged into me deciding to invest my career aspirations on it as I delved into associated subfields. I eventually came to the decision of taking it up as a course at Birmingham
+              City University to dive deeper in the field’s discipline.
+            </p>
+            <p>
+              My current interests and work revolve around the full-stack development, software engineering and most recently artificial intelligence and machine learning.
+            </p>
+            <p>
+              I consider myself as an all-rounder, team-player and hard working individual with limitless boundaries in taking a challenge and wanting to discover more about how the evolving world of technology 
+              effects our current day to day activity.
+            </p>
           </div>
         </div>
         <!-- ABOUT ME IMAGES -->
@@ -191,7 +191,6 @@
         </div>
       </div>
     </section>
-
     <!-- EDUCATION -->
     <section class="bg-warm_orange pt-25 pb-7" id="education">
       <div class="flex justify-center mt-5">
@@ -225,7 +224,7 @@
                     <h3 class="font-bebas_neue text-2xl">Secondary School</h3>
                   </div>
                   <div class="ml-auto">
-                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">GCSEs</p>
+                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-lg flex items-center">GCSEs</p>
                   </div>
                 </div>
                 <div class="mt-5 pl-4 font-righteous">
@@ -234,7 +233,7 @@
                     <li>Early interest developed into the field of Computer Science</li>
                   </ul>
                 </div>
-                <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                <button class="mt-8 p-3 bg-warm_orange rounded-lg border-3 border-warm_orange flex flex-row items-center font-righteous gap-x-1 cursor-pointer transition ease-in-out hover:bg-rust hover:border-amber-900" id="#">
                   <div>More details</div>
                   <img src="resources/icons/arrow_circle.png">
                 </button>
@@ -262,7 +261,7 @@
                     <h3 class="font-bebas_neue text-2xl">Sixth Form</h3>
                   </div>
                   <div class="ml-auto">
-                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">A-Levels</p>
+                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-lg flex items-center">A-Levels</p>
                   </div>
                 </div>
                 <div class="mt-5 pl-4 font-righteous">
@@ -272,7 +271,7 @@
                     <li>Volunteered as an BTEC Engineering Student Ambassador</li>
                   </ul>
                 </div>
-                <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                <button class="mt-8 p-3 bg-warm_orange rounded-lg border-3 border-warm_orange flex flex-row items-center font-righteous gap-x-1 cursor-pointer transition ease-in-out hover:bg-rust hover:border-amber-900" id="#">
                   <div>More details</div>
                   <img src="resources/icons/arrow_circle.png">
                 </button>
@@ -300,7 +299,7 @@
                     <h3 class="font-bebas_neue text-2xl">Undergraduate Degree</h3>
                   </div>
                   <div class="ml-auto">
-                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-4xl flex items-center">BSc Computer Science</p>
+                    <p class="font-righteous text-xl bg-warm_orange p-3 rounded-lg flex items-center">BSc Computer Science</p>
                   </div>
                 </div>
                 <div class="mt-5 pl-4 font-righteous">
@@ -309,7 +308,7 @@
                     <li>Year 1 Innovation Project Team placed 1st for "Best Entrepeneurial Project"</li>
                   </ul>
                 </div>
-                <button class="mt-8 p-3 bg-warm_orange rounded-4xl flex flex-row items-center font-righteous gap-x-1 cursor-pointer" id="#">
+                <button class="mt-8 p-3 bg-warm_orange rounded-lg border-3 border-warm_orange flex flex-row items-center font-righteous gap-x-1 cursor-pointer transition ease-in-out hover:bg-rust hover:border-amber-900" id="#">
                   <div>More details</div>
                   <img src="resources/icons/arrow_circle.png">
                 </button>
@@ -319,33 +318,103 @@
         </div>
     </section>
     <!-- PROJECTS -->
-    <section class="bg-rust border-6 border-amber-900 h-screen pt-13" id="projects">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide rounded-xl border-8 border-amber-900">
-            <img src="resources/images/spelling_wizard_practice_preview.png" class="rounded-sm"/>
-          </div>
-          <div class="swiper-slide rounded-xl border-8 border-amber-900">
-            <img src="resources/images/deskacito_preview.png" class="rounded-sm"/>
-          </div>
-          <div class="swiper-slide rounded-xl border-8 border-amber-900">
-            <img src="resources/images/amped_beats_preview.png" class="rounded-sm"/>
-          </div>
-          <div class="swiper-slide rounded-xl border-8 border-amber-900">
-            <img src="resources/images/bmw_plant_hams_hall_preview.png" class="rounded-sm"/>
+    <section class="bg-rust border-6 border-amber-900 pt-25 overflow-x-hidden" id="projects">
+      <div class="flex justify-center pr-20">
+        <div class="pb-4 border-b-5 text-white select-none">
+          <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
+            <h1 class="text-8xl/30 text-center">Projects</h1>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      </div>
+      <!-- CAROUSELS -->
+      <div class="my-16">
+        <!-- FEATURED PROJECTS -->
+        <div class="grid grid-cols-4 items-center mx-8 border-b-2 border-white">
+          <div class="col-span-3 justify-start text-white gap-x-4 ml-5">
+            <div class="font-bebas_neue pb-2">
+              <h2 class="text-6xl">Featured</h2>
+              <h2 class="font-righteous text-xl">Projects I have completed ranging from Personal Endeavours to Education-Based ones</h2>
+            </div>
+          </div>
+          <div class="flex justify-end mr-5">
+            <a href="#featured_projects">
+              <h2 class="font-bebas_neue text-white text-2xl hover:underline">View All</h2>
+            </a>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide rounded-xl border-8 border-amber-900 relative">
+                <img src="resources/images/slide1.png" class="rounded-sm"/>
+                <h2 class="absolute left-17 bottom-5 text-[80px] font-bebas_neue leading-none text-white text-shadow-lg/100">Spelling Wizard Practice</h2>
+              </div>
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide2.png" class="rounded-sm"/>
+                <h2 class="absolute left-50 bottom-0 text-[120px] font-bebas_neue leading-none text-white text-shadow-lg/100">Deskacito</h2>
+              </div>
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide3.png" class="rounded-sm"/>
+                <h2 class="absolute left-35 bottom-0 text-[120px] font-bebas_neue leading-none text-white text-shadow-lg/100">Amped Beats</h2>
+              </div>
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide4.png" class="rounded-sm"/>
+                <h2 class="absolute left-14 bottom-11 text-[75px] font-bebas_neue leading-none text-white text-shadow-lg/100">BMW Group Plant Hams Hall</h2>
+                <h2 class="absolute left-35 bottom-2 text-[38px] font-bebas_neue leading-none text-white text-shadow-lg/100">Physical Asset Tracking Vision Platform</h2>
+              </div>
+            </div>
+            <!--<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-->
+            <div class="swiper-pagination !static !flex !w-fit !mx-auto mt-4"></div>
+          </div>
+        </div>
+        <!-- ONGOING PROJECTS -->
+        <div class="grid grid-cols-4 items-center mx-8 mt-16 border-b-2 border-white">
+          <div class="col-span-3 justify-start text-white gap-x-4 ml-5">
+            <div class="font-bebas_neue pb-2">
+              <h2 class="text-6xl">Ongoing</h2>
+              <h2 class="font-righteous text-xl">Projects that I am currently planning or working on</h2>
+            </div>
+          </div>
+          <div class="flex justify-end mr-5">
+            <a href="#featured_projects">
+              <h2 class="font-bebas_neue text-white text-2xl hover:underline">View All</h2>
+            </a>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide_placeholder.png" class="rounded-sm"/>
+              </div>
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide_placeholder.png" class="rounded-sm"/>
+              </div>
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide_placeholder.png" class="rounded-sm"/>
+              </div>
+              <div class="swiper-slide rounded-xl border-8 border-amber-900">
+                <img src="resources/images/slide_placeholder.png" class="rounded-sm"/>
+              </div>
+            </div>
+            <!--<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-->
+            <div class="swiper-pagination !static !flex !w-fit !mx-auto mt-4"></div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- SKILLS & CERTIFICATIONS -->
-    
+    <section class="bg-warm_orange pt-25 items-center h-screen pt-13" id="skills_certifications">
+
+    </section>
     <!-- EXPERIENCE -->
-    
+    <section class="bg-rust border-6 border-amber-900 h-screen pt-13" id="experience">
+
+    </section>
     <!-- CONTACT ME -->
-    <section class="bg-warm_orange pt-25 items-center" id="contact_me">
+    <section class="bg-warm_orange pt-25" id="contact_me">
       <div class="flex justify-center mt-5">
         <div class="pb-4 border-b-5 text-white select-none">
           <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
@@ -360,15 +429,15 @@
           <div class="flex flex-col my-6 gap-y-4">
             <input type="hidden" name="time" value="Mar 10 2025 08:46">
             <label class="font-righteous text-2xl text-white">Name</label>
-            <input type="text" name="name" class="bg-white border-amber-900 border-3 p-2" required>
+            <input type="text" name="name" class="bg-white border-amber-900 border-[3px] p-2" required>
             <label class="font-righteous text-2xl text-white">Email</label>
-            <input type="email" name="email" class="bg-white border-amber-900 border-3 p-2" required>
+            <input type="email" name="email" class="bg-white border-amber-900 border-[3px] p-2" required>
             <label class="font-righteous text-2xl text-white">Subject</label>
-            <input type="text" name="subject" class="bg-white border-amber-900 border-3 p-2" required>
+            <input type="text" name="subject" class="bg-white border-amber-900 border-[3px] p-2" required>
             <label class="font-righteous text-2xl text-white">Message</label>
-            <textarea name="message" class="bg-white border-amber-900 border-3 p-2 resize-none h-70" required></textarea>
+            <textarea name="message" class="bg-white border-amber-900 border-[3px] p-2 resize-none h-70" required></textarea>
           </div>
-            <input type="submit" value="Send" class="font-bebas_neue text-2xl px-6 py-3 left-0 bg-white cursor-pointer hover:bg-gray-500">
+            <input type="submit" value="Send" class="font-righteous text-2xl px-6 py-3 left-0 bg-white cursor-pointer hover:bg-gray-500">
         </form>
         <!-- LINKS -->
         <div class="flex flex-col col-span-3 gap-y-8 my-8">
