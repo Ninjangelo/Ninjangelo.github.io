@@ -319,7 +319,7 @@
     </section>
     <!-- PROJECTS -->
     <section class="bg-rust border-6 border-amber-900 pt-25 overflow-x-hidden" id="projects">
-      <div class="flex justify-center pr-20">
+      <div class="flex justify-center items-center">
         <div class="pb-4 border-b-5 text-white select-none">
           <div class="mx-4 p-3 font-bebas_neue text-shadow-lg/40 border-10 border-double">
             <h1 class="text-8xl/30 text-center">Projects</h1>
@@ -422,7 +422,7 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-flow-col grid-rows-1 grid-cols-5 gap-x-7 py-10 px-8">
+      <div class="grid grid-flow-col grid-rows-1 grid-cols-5 gap-x-12 py-16 px-10">
         <!-- CONTACT FORM -->
         <form id="contact-form" class="bg-rust rounded-4xl p-7 col-span-2">
           <h2 class="font-bebas_neue text-white text-6xl">Direct Message</h2>
@@ -437,7 +437,7 @@
             <label class="font-righteous text-2xl text-white">Message</label>
             <textarea name="message" class="bg-white border-amber-900 border-[3px] p-2 resize-none h-70" required></textarea>
           </div>
-            <input type="submit" value="Send" class="font-righteous text-2xl px-6 py-3 left-0 bg-white cursor-pointer hover:bg-gray-500">
+            <input type="submit" value="Send" class="mt-8 p-3 bg-warm_orange text-white rounded-lg border-3 border-warm_orange flex flex-row items-center font-righteous gap-x-1 cursor-pointer transition ease-in-out hover:bg-rust hover:border-amber-900">
         </form>
         <!-- LINKS -->
         <div class="flex flex-col col-span-3 gap-y-8 my-8">
@@ -511,9 +511,17 @@
         </div>
       </div>
     </section>
+    <!-- Temporary Javascript Direct Links -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="node_modules/swiper/swiper-bundle.js"></script>
     <script src="javascript/swiper-init.js"></script>
+    <!--
+    <script type="module">
+      import { ghostCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      new ghostCursor();
+    </script>
+    -->
     <!-- <script src="javascript/loader.js"></script> -->
     <!-- <script type="module" src="JS/contact-form.js"></script> -->
   </div>
