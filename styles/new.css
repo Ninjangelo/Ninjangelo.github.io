@@ -305,6 +305,9 @@
   .mx-8 {
     margin-inline: calc(var(--spacing) * 8);
   }
+  .mx-13 {
+    margin-inline: calc(var(--spacing) * 13);
+  }
   .mx-20 {
     margin-inline: calc(var(--spacing) * 20);
   }
@@ -349,6 +352,9 @@
   }
   .mr-90 {
     margin-right: calc(var(--spacing) * 90);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -425,6 +431,9 @@
   .w-17 {
     width: calc(var(--spacing) * 17);
   }
+  .w-18 {
+    width: calc(var(--spacing) * 18);
+  }
   .w-21 {
     width: calc(var(--spacing) * 21);
   }
@@ -498,6 +507,9 @@
   .grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
+  .grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -537,6 +549,12 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-26 {
     gap: calc(var(--spacing) * 26);
   }
@@ -575,6 +593,16 @@
   .gap-x-12 {
     column-gap: calc(var(--spacing) * 12);
   }
+  .gap-x-16 {
+    column-gap: calc(var(--spacing) * 16);
+  }
+  .space-x-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
   }
@@ -586,6 +614,9 @@
   }
   .gap-y-8 {
     row-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-10 {
+    row-gap: calc(var(--spacing) * 10);
   }
   .gap-y-30 {
     row-gap: calc(var(--spacing) * 30);
@@ -733,6 +764,9 @@
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
+  }
+  .py-25 {
+    padding-block: calc(var(--spacing) * 25);
   }
   .pt-13 {
     padding-top: calc(var(--spacing) * 13);
@@ -962,6 +996,11 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-divide-x-reverse {
   syntax: "*";
   inherits: false;
@@ -1085,6 +1124,7 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
       --tw-divide-x-reverse: 0;
       --tw-border-style: solid;
       --tw-leading: initial;
@@ -1171,4 +1211,43 @@ canvas {
 /* Custom Cursor */
 body {
   cursor: url('../resources/icons/xp normal (large).cur'), auto;
+}
+
+/* Animations */
+/*
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.rotationAnimation {
+    width: auto;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+  
+.rotationAnimation:hover {
+    animation: pulse 2s ease-in-out;
+}
+*/
+
+.rotationAnimation {
+    width: auto;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+
+
+.rotationAnimation:hover {
+    transform: rotate(180deg);
 }
