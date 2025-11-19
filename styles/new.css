@@ -606,9 +606,6 @@
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
   }
-  .gap-y-6 {
-    row-gap: calc(var(--spacing) * 6);
-  }
   .gap-y-7 {
     row-gap: calc(var(--spacing) * 7);
   }
@@ -771,9 +768,6 @@
   .pt-13 {
     padding-top: calc(var(--spacing) * 13);
   }
-  .pt-15 {
-    padding-top: calc(var(--spacing) * 15);
-  }
   .pt-25 {
     padding-top: calc(var(--spacing) * 25);
   }
@@ -785,9 +779,6 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
-  }
-  .pb-7 {
-    padding-bottom: calc(var(--spacing) * 7);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -877,14 +868,9 @@
   .opacity-0 {
     opacity: 0%;
   }
-  .shadow-xl\/30 {
-    --tw-shadow-alpha: 30%;
-    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-xl\/45 {
-    --tw-shadow-alpha: 45%;
-    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 45%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 45%));
+  .shadow-xl\/20 {
+    --tw-shadow-alpha: 20%;
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xl {
