@@ -353,6 +353,9 @@
   .mr-90 {
     margin-right: calc(var(--spacing) * 90);
   }
+  .mr-118 {
+    margin-right: calc(var(--spacing) * 118);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -379,6 +382,9 @@
   }
   .ml-60 {
     margin-left: calc(var(--spacing) * 60);
+  }
+  .ml-78 {
+    margin-left: calc(var(--spacing) * 78);
   }
   .ml-auto {
     margin-left: auto;
@@ -428,6 +434,12 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
   .w-17 {
     width: calc(var(--spacing) * 17);
   }
@@ -436,6 +448,9 @@
   }
   .w-21 {
     width: calc(var(--spacing) * 21);
+  }
+  .w-22 {
+    width: calc(var(--spacing) * 22);
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
@@ -495,6 +510,9 @@
   .grid-flow-col {
     grid-auto-flow: column;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -506,6 +524,12 @@
   }
   .grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
   .grid-rows-5 {
     grid-template-rows: repeat(5, minmax(0, 1fr));
@@ -555,6 +579,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-26 {
     gap: calc(var(--spacing) * 26);
   }
@@ -601,6 +628,13 @@
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-7 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 7) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 7) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .gap-y-4 {
@@ -785,6 +819,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .font-bebas_neue {
     font-family: var(--font-bebas_neue);
@@ -1227,6 +1264,7 @@ body {
 }
 */
 
+/*
 .rotationAnimation {
     width: auto;
     height: 100px;
@@ -1237,3 +1275,4 @@ body {
 .rotationAnimation:hover {
     transform: rotate(180deg);
 }
+*/

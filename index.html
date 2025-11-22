@@ -35,9 +35,10 @@
             });
         }
   </script>
+  <!-- TEMPORARY ALERT 
   <script>
     alert("DISCLAIMER: This portfolio website is still a work in progress so please bare with the missing information in certain sections");
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -58,10 +59,12 @@
     <!-- NAVBAR -->
     <div class="fixed top-0 w-full z-50">
       <div class="flex flex-row justify-center p-4 font-righteous items-center">
-        <nav class="flex p-4 bg-black rounded-2xl place-items-center justify-items-center text-center text-white">
-          <a class="text-3xl font-bebas_neue" href="#hero">Angelo</a>
-        </nav>
-        <nav class="py-5 bg-black rounded-2xl text-white ml-60 mr-90">
+        <a class="text-3xl font-bebas_neue" href="#hero">
+          <nav class="flex p-4 bg-rust border-amber-900 border-3 rounded-2xl place-items-center justify-items-center text-center text-white">
+            Angelo
+          </nav>
+        </a>
+        <nav class="py-5 bg-rust border-amber-900 border-3 rounded-2xl text-white ml-78 mr-118">
           <ul class="flex flex-row divide-x-2">
             <li>
               <a class="text-lg mx-5" href="#about_me">About Me</a>
@@ -75,9 +78,11 @@
             <li>
               <a class="text-lg mx-5" href="#skills_certifications">Skills</a>
             </li>
+            <!--
             <li>
               <a class="text-lg mx-5" href="#experience">Experience</a>
             </li>
+            -->
             <li>
               <a class="text-lg mx-5" href="#contact_me">Contacts</a>
             </li>
@@ -112,16 +117,10 @@
           <div class="space-y-10">
             <div class="flex flex-row mt-4 mx-3 gap-3 text-[17px] font-righteous select-none">
               <h1 class="p-3 bg-rust rounded-xl shadow-xl/20 border-3 border-amber-900">3rd Year BSc Computer Science Student</h1>
-              <h1 class="p-3 bg-rust rounded-xl shadow-xl/20 border-3 border-amber-900">Full-Stack</h1>
+              <h1 class="p-3 bg-rust rounded-xl shadow-xl/20 border-3 border-amber-900">Full Stack</h1>
               <h1 class="p-3 bg-rust rounded-xl shadow-xl/20 border-3 border-amber-900">Software Engineering</h1>
             </div>
             <div class="flex flex-row ml-1 gap-x-8 text-[17px] font-righteous place-content-center">
-              <!--<a href="https://www.linkedin.com/in/angelo-luis-lagdameo/">
-                <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-linkedin-64.png">
-              </a>
-              <a href="https://github.com/Ninjangelo">
-                <img class="bg-rust p-1 rounded-full" src="resources/icons/icons8-github-64.png">
-              </a>-->
               <a href="#">
                 <div class="flex flex-row items-center p-3 bg-rust rounded-xl text-xl gap-x-2 border-3 border-amber-900">
                   <img src="resources/icons/icons8-cv-48.png">
@@ -336,7 +335,7 @@
           <div class="col-span-3 justify-start text-white gap-x-4 ml-5">
             <div class="font-bebas_neue pb-2">
               <h2 class="text-6xl">Featured</h2>
-              <h2 class="font-righteous text-xl">Projects I have completed ranging from Personal Endeavours to Education-Based ones</h2>
+              <h2 class="font-righteous text-xl">Projects I have completed ranging from Personal Endeavours to Education-Based projects</h2>
             </div>
           </div>
           <div class="flex justify-end mr-5">
@@ -417,55 +416,121 @@
           </div>
         </div>
       </div>
+      <!-- TECHNICAL SKILLS -->
       <div class="mx-8 mt-16 border-b-2 border-white">
-        <div class="flex flex-row items-center text-white font-bebas_neue ml-5 mb-2 gap-4">
-          <img src="resources/icons/icons8-engineering-90.png" class="rotationAnimation">
+        <div class="flex flex-row items-center text-white font-bebas_neue ml-5 mb-2 gap-6">
+          <img src="resources/icons/computer.svg" class="w-22">
           <h2 class="text-6xl">Technical</h2>
         </div>
       </div>
-      <div class="grid grid-rows-5">
+      <div class="grid grid-rows-3">
         <div class="grid grid-cols-4 mx-13 mt-8 gap-5 text-center text-white">
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3 hover:bg-rust hover:border-amber-900">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3 hover:bg-rust hover:border-amber-900">
             <img src="resources/icons/python.svg" class="w-18" alt="python_logo">
             <h3>Python</h3>
           </div>
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
             <img src="resources/icons/c-plus-plus.svg" class="w-18" alt="c_plus_plus_logo">
             <h3>C++</h3>
           </div>
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
             <img src="resources/icons/java.svg" class="w-18" alt="java_logo">
             <h3>Java</h3>
           </div>
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
             <img src="resources/icons/php.svg" class="w-18" alt="php_logo">
             <h3>PHP</h3>
           </div>
         </div>
-        <!--
         <div class="grid grid-cols-4 mx-13 mt-8 gap-5 text-center text-white">
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3 hover:bg-rust hover:border-amber-900">
-            <img src="resources/icons/python.svg" class="w-18" alt="python_logo">
-            <h3>Python</h3>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-7 hover:bg-rust hover:border-amber-900">
+            <img src="resources/icons/html.svg" class="w-14" alt="html_logo">
+            <h3>HTML</h3>
           </div>
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
-            <img src="resources/icons/c-plus-plus.svg" class="w-18" alt="c_plus_plus_logo">
-            <h3>C++</h3>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-7">
+            <img src="resources/icons/css.svg" class="w-14" alt="css_logo">
+            <h3>CSS</h3>
           </div>
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
-            <img src="resources/icons/java.svg" class="w-18" alt="java_logo">
-            <h3>Java</h3>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-7">
+            <img src="resources/icons/javascript.svg" class="w-14" alt="javascript_logo">
+            <h3>JavaScript</h3>
           </div>
-          <div class="flex flex-row bg-rust items-center text-3xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
-            <img src="resources/icons/php.svg" class="w-18" alt="php_logo">
-            <h3>PHP</h3>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-7">
+            <img src="resources/icons/mysql.svg" class="w-14" alt="mysql_logo">
+            <h3>MySQL</h3>
           </div>
         </div>
-        -->
+        <div class="grid grid-cols-4 mx-13 mt-8 gap-5 text-center text-white">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3 hover:bg-rust hover:border-amber-900">
+            <img src="resources/icons/github.svg" class="w-16" alt="github_logo">
+            <h3>Github</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/figma.svg" class="w-14" alt="figma_logo">
+            <h3>Figma</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-left text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/code.svg" class="w-14" alt="assignment_logo">
+            <h3>Full Stack Development</h3>
+          </div>
+        </div>
+      </div>
+      <!-- GENERAL SKILLS -->
+      <div class="mx-8 mt-16 border-b-2 border-white">
+        <div class="flex flex-row items-center text-white font-bebas_neue ml-5 mb-2 gap-4">
+          <img src="resources/icons/icons8-engineering-90.png" class="rotationAnimation">
+          <h2 class="text-6xl">General</h2>
+        </div>
+      </div>
+      <div class="grid grid-rows-2">
+        <div class="grid grid-cols-4 mx-13 mt-8 gap-5 text-center text-white">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3 hover:bg-rust hover:border-amber-900">
+            <img src="resources/icons/user.svg" class="w-14" alt="user_logo">
+            <h3>Active Listening</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/user.svg" class="w-14" alt="user_logo">
+            <h3>Communication</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-7">
+            <img src="resources/icons/group.svg" class="w-14" alt="group_logo">
+            <h3>Team Leadership</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-7">
+            <img src="resources/icons/group.svg" class="w-14" alt="group_logo">
+            <h3>Team Collaboration</h3>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 mx-13 mt-8 gap-5 text-center text-white">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3 hover:bg-rust hover:border-amber-900">
+            <img src="resources/icons/user.svg" class="w-16" alt="user_logo">
+            <h3>Problem Solving</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/assignment.svg" class="w-14" alt="assignment_logo">
+            <h3>Project Management</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/assignment.svg" class="w-14" alt="assignment_logo">
+            <h3>Project Coordination</h3>
+          </div>
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/assignment.svg" class="w-14" alt="assignment_logo">
+            <h3>Research</h3>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 mx-13 mt-8 gap-5 text-center text-white">
+          <div class="flex flex-row bg-rust items-center text-2xl font-righteous p-3 border-[3px] border-amber-900 rounded-lg space-x-3">
+            <img src="resources/icons/assignment.svg" class="w-14" alt="assignment_logo">
+            <h3>UI/UX Design</h3>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- EXPERIENCE -->
+
+    <!-- EXPERIENCE 
     <section class="bg-rust border-6 border-amber-900 h-screen pt-13" id="experience">
+      -->
 
     </section>
     <!-- CONTACT ME -->
