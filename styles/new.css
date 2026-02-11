@@ -242,11 +242,26 @@
   .bottom-11 {
     bottom: calc(var(--spacing) * 11);
   }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
+  }
+  .bottom-23 {
+    bottom: calc(var(--spacing) * 23);
+  }
+  .bottom-30 {
+    bottom: calc(var(--spacing) * 30);
+  }
+  .bottom-40 {
+    bottom: calc(var(--spacing) * 40);
+  }
   .bottom-59 {
     bottom: calc(var(--spacing) * 59);
   }
   .bottom-59\.5 {
     bottom: calc(var(--spacing) * 59.5);
+  }
+  .bottom-63 {
+    bottom: calc(var(--spacing) * 63);
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
@@ -263,8 +278,23 @@
   .left-35 {
     left: calc(var(--spacing) * 35);
   }
+  .left-36 {
+    left: calc(var(--spacing) * 36);
+  }
   .left-50 {
     left: calc(var(--spacing) * 50);
+  }
+  .left-65 {
+    left: calc(var(--spacing) * 65);
+  }
+  .left-70 {
+    left: calc(var(--spacing) * 70);
+  }
+  .left-72 {
+    left: calc(var(--spacing) * 72);
+  }
+  .left-91 {
+    left: calc(var(--spacing) * 91);
   }
   .z-0 {
     z-index: 0;
@@ -350,9 +380,6 @@
   .mr-27\.5 {
     margin-right: calc(var(--spacing) * 27.5);
   }
-  .mr-90 {
-    margin-right: calc(var(--spacing) * 90);
-  }
   .mr-118 {
     margin-right: calc(var(--spacing) * 118);
   }
@@ -379,9 +406,6 @@
   }
   .ml-25\.5 {
     margin-left: calc(var(--spacing) * 25.5);
-  }
-  .ml-60 {
-    margin-left: calc(var(--spacing) * 60);
   }
   .ml-78 {
     margin-left: calc(var(--spacing) * 78);
@@ -452,6 +476,18 @@
   .w-22 {
     width: calc(var(--spacing) * 22);
   }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
+  .w-55 {
+    width: calc(var(--spacing) * 55);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -510,9 +546,6 @@
   .grid-flow-col {
     grid-auto-flow: column;
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -530,9 +563,6 @@
   }
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
-  }
-  .grid-rows-5 {
-    grid-template-rows: repeat(5, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -753,9 +783,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
